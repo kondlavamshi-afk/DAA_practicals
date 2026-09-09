@@ -1,54 +1,50 @@
-PRACTICAL-1
+# DAA.PRATICAL_1
+# SUMMARY:-
+This Design and Analysis of Algorithms (DAA) notebook demonstrates the implementation and performance evaluation of four fundamental sorting algorithms: Bubble Sort, Selection Sort, Merge Sort, and Quick Sort. Each algorithm accepts user input, sorts the given array, and measures the execution time using Python's time.perf_counter() function. The implementations illustrate different algorithmic strategies, including iterative and divide-and-conquer approaches. The notebook also highlights the time complexity of these algorithms, enabling a comparison of their efficiency for different input sizes. Overall, it serves as a practical learning resource for understanding sorting techniques, algorithm design, and performance analysis.
 
-Summary :
+# CONCLUSION:
+The notebook shows that different sorting algorithms have varying levels of efficiency depending on their approach. Bubble Sort and Selection Sort are simple to implement but are less efficient for large datasets because of their O(n²) time complexity. In contrast, Merge Sort and Quick Sort use the divide-and-conquer technique, making them significantly faster for larger inputs with an average time complexity of O(n log n). By measuring execution time, the notebook demonstrates the practical impact of algorithmic complexity on performance. Overall, the experiment emphasizes the importance of selecting the appropriate sorting algorithm based on the size and characteristics of the data to achieve optimal performance.
 
-The five sorting algorithms—Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, and Quick Sort—are used to arrange data in ascending or descending order. Bubble Sort repeatedly compares adjacent elements and swaps them when they are in the wrong order. Selection Sort finds the smallest element and places it in the correct position. Insertion Sort builds the sorted list one element at a time. Merge Sort divides the data into smaller parts and then merges them in sorted order. Quick Sort selects a pivot element and divides the data around the pivot. Each algorithm has different time and space requirements, so the suitable algorithm depends on the size and nature of the input data.
+# DAA.PRATICAL_2
+# SUMMARY:-
+This program demonstrates the implementation of Linear Search and Binary Search algorithms in Python. It accepts user input, searches for a given element, measures the execution time, and displays the result along with the time complexity. Linear Search checks each element one by one, whereas Binary Search works on a sorted array by repeatedly dividing the search space into two halves, making it more efficient.
 
-Conclusion :
+# CONCLUSION:-
+The experiment shows that Binary Search is significantly faster than Linear Search for large sorted datasets, with a time complexity of O(log n) compared to O(n) for Linear Search. However, Binary Search requires the array to be sorted, while Linear Search can be applied to both sorted and unsorted data. Therefore, the choice of algorithm depends on the nature of the input data and the application's requirements.
 
-Sorting algorithms are used to arrange data in ascending or descending order, making searching and data processing more efficient. Bubble Sort, Selection Sort, and Insertion Sort are simple and suitable for small datasets, while Merge Sort and Quick Sort are more efficient for large datasets. Each algorithm has its own advantages, limitations, and time complexity. The choice of the best sorting algorithm depends on the size of the data, available memory, and application requirements.
+# DAA.PRATICAL_3
+# SUMMARY:-
+This program implements the Heap Sort algorithm in Python. It builds a Max Heap from the input array and repeatedly extracts the largest element to produce the sorted array in ascending order. The program also measures the execution time in microseconds and displays the best, average, and worst-case time complexities.
+
+# CONCLUSION:-
+The experiment demonstrates that Heap Sort is an efficient comparison-based sorting algorithm with a consistent time complexity of O(n log n) in the best, average, and worst cases. It provides reliable performance regardless of the input order and is suitable for sorting large datasets. Although it is not a stable sorting algorithm, Heap Sort is preferred when guaranteed O(n log n) performance and constant auxiliary space (O(1)) are required.
+
+# DAA_PRACTICAL_4
+# SUMMARY:
+In this practical, a factorial program was implemented using both iterative and recursive methods in Python. The iterative method calculates the factorial by using a loop, while the recursive method calculates it by calling the same function repeatedly until a base condition is reached. Both methods successfully produce the correct factorial value. The time complexity of both approaches is O(n), but the recursive method requires additional memory for function calls.
+
+# CONCLUSION:
+Through this practical, we learned how to solve the factorial problem using two different approaches. The iterative method is simple, efficient, and uses less memory, making it suitable for larger inputs. The recursive method is easier to understand and demonstrates the concept of recursion effectively. Both approaches are important for learning programming concepts and understanding different ways to solve the same problem.
+
+# DAA_PRACTICAL_5
+# Summary:
+In this practical, the 0/1 Knapsack Problem was implemented using Dynamic Programming. The program calculates the maximum value that can be carried in a knapsack without exceeding its weight limit. Dynamic Programming helps avoid repeating the same calculations, making the solution faster and more efficient.
+
+# Conclusion:
+The practical helped in understanding how Dynamic Programming can be used to solve optimization problems. By storing intermediate results, the algorithm finds the best possible solution efficiently. It is a useful technique for solving real-world problems that involve maximizing profit or minimizing cost under given constraints.
+
+# DAA_PRACTICAL_6
+# Summary:
+In this practical, Matrix Chain Multiplication was implemented using Dynamic Programming. The program finds the best order to multiply a group of matrices so that the total number of calculations is minimized. By storing the results of smaller problems, it avoids repeating the same calculations and improves efficiency.
+
+# Conclusion:
+This practical helped in understanding how Dynamic Programming can be used to optimize matrix multiplication. The algorithm efficiently finds the minimum multiplication cost and reduces unnecessary computations. It is a useful technique for solving complex optimization problems in computer science.
+
+# DAA_PRACTICAL_7
+# SUMMARY:
+In this practical, I implemented the Making Change Problem using Dynamic Programming. The aim was to find the minimum number of coins needed to make a given amount from the available coin denominations. By breaking the problem into smaller parts and storing the results, the program was able to solve the problem efficiently. This practical helped me understand how Dynamic Programming avoids repeated calculations and provides an optimal solution in less time.
+
+# CONCLUSION:
+By completing this practical, I gained a better understanding of Dynamic Programming and its advantages over simple brute-force methods. I learned how storing previously calculated results can improve the efficiency of a program. The Making Change Problem is a good example of how Dynamic Programming can be used to solve real-life optimization problems. Overall, this practical improved my problem-solving skills and strengthened my understanding of Dynamic Programming concepts.
 
 
-
-PRACTICAL-2
-
-Summary :
-
-Linear Search and Binary Search are two common searching algorithms used to find a particular element in a list. Linear Search checks each element one by one from the beginning until the required element is found or the list ends. It is simple and can work on both sorted and unsorted data. Binary Search works by repeatedly dividing a sorted list into two halves and checking the middle element. It eliminates half of the remaining elements after each comparison, making it much faster for large datasets.
-
-Conclusion:
-
-Linear Search and Binary Search are two fundamental searching techniques used to locate an element in a collection. Linear Search is simple to implement and works on both sorted and unsorted data, but its performance decreases as the size of the dataset grows because it checks elements one by one. In contrast, Binary Search is much faster for large datasets, as it repeatedly divides the search space in half, but it requires the data to be sorted before searching. Therefore, Linear Search is suitable for small or unsorted datasets, while Binary Search is the preferred choice for large, sorted datasets due to its higher efficiency and lower search time. Together, these algorithms demonstrate the importance of selecting an appropriate searching technique based on the nature of the data and application requirements.
-
-
-PRACTICAL- 3
-
-Summary
-
-Max-Heap Sort is a comparison-based sorting algorithm that uses a Max Heap data structure. In a Max Heap, the largest element is always present at the root. The algorithm first builds a Max Heap from the given elements and then repeatedly moves the largest element to the end of the array. After each movement, the heap is rearranged to maintain the Max Heap property. This process continues until all elements are sorted in ascending order.
-
-Conclusion:
-
-Heap Sort using a Max Heap is an efficient comparison-based sorting algorithm that sorts elements in ascending order by repeatedly extracting the largest element from the heap. It provides a consistent time complexity of O(n log n) in the best, average, and worst cases, making its performance reliable regardless of the input data. Heap Sort is an in-place algorithm with O(1) auxiliary space (excluding the recursion stack), making it memory-efficient. Although it is not a stable sorting algorithm, it is well suited for applications that require predictable performance and efficient sorting of large datasets.
-
-
-PRACTICAL-4
-
-Summary :
-
-The factorial program was implemented using both iterative and recursive methods in Python. The user enters a number, and the program calculates its factorial using both approaches. The execution time of each method is measured using Python's time. perf_ counter() function. The iterative method uses a loop, while the recursive method repeatedly calls the same function until it reaches the base condition.
-
- Conclusion:
-
-Both iterative and recursive methods successfully calculate the factorial of a given number. Both methods have O(n) time complexity, but their space requirements are different. The iterative method has O(1) space complexity, whereas the recursive method has O(n) space complexity because of the function call stack. Therefore, the iterative method is more memory-efficient, while the recursive method provides a simpler representation of the factorial logic.
-
-
-PRACTICAL-7
-
-Summary :
-
-The making change problem was implemented using the Dynamic Programming technique. The program calculates the minimum number of coins required to make a given amount. Dynamic Programming stores previously calculated results in a table, which avoids repeatedly solving the same subproblems. The algorithm has O(n × A) time complexity and O(A) space complexity.
-
- Conclusion:
-
-The Dynamic Programming approach provides an efficient solution to the making change problem by storing and reusing previously calculated results. It successfully finds the minimum number of coins required for the given amount. Compared with a simple recursive approach, Dynamic Programming reduces repeated calculations and provides better performance for larger amounts.
